@@ -2,12 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import Header from './Header';
 
-const Layout = ({ children, title }) => (
+const Layout = ({ children, pageHead, pageHeader }) => (
   <>
     <Head>
-      <title>{title}</title>
+      <title>{pageHead}</title>
     </Head>
-    <Header title={title}/>
+    <Header pageHeader={pageHeader}/>
     {children}
   </>
 );

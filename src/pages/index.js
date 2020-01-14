@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Channels from '../components/Channels';
 
 const Home = ({ channels }) => (
-  <Layout title='Podcast'>
+  <Layout pageHeader='Podcast' pageHead='Podcast'>
     <Channels getChannels={channels}/>
   </Layout>
 );

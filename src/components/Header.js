@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import '../assets/styles/components/Header.scss'
 
-const Header = ({ title }) => (
+const Header = ({ pageHeader }) => (
   <header>
     <Link href='/'>
-      <a>{title}</a>
+      <a>{pageHeader}</a>
     </Link>
   </header>
 );
