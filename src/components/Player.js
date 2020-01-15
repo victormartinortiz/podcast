@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '../../routes';
+import slug from '../utils/slug';
 import '../assets/styles/components/Player.scss';
 
 const Player = ({ clip }) => (
@@ -7,7 +8,10 @@ const Player = ({ clip }) => (
     <div className="modal">
       <div className="clip">
         <nav>
-          <Link href={`/channel?id=${clip.channel.id}`}>
+          <Link
+            route="channel"
+            params={{ slug: slug(clip.channel.title), id: clip.channel.id }}
+          >
             <a className="close">&lt; Volver</a>
           </Link>
         </nav>
