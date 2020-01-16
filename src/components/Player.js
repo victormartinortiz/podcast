@@ -3,17 +3,21 @@ import { Link } from '../../routes';
 import slug from '../utils/slug';
 import '../assets/styles/components/Player.scss';
 
-const Player = ({ clip }) => (
+const Player = ({ clip, onClose }) => (
   <>
     <div className="modal">
       <div className="clip">
         <nav>
+        { onClose ?
+          <a onClick={onClose}>&lt; Volver</a>
+          :
           <Link
             route="channel"
             params={{ slug: slug(clip.channel.title), id: clip.channel.id }}
           >
             <a className="close">&lt; Volver</a>
           </Link>
+        }
         </nav>
 
         <picture>
