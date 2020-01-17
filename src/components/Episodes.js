@@ -7,17 +7,16 @@ import '../assets/styles/components/Channel.scss';
 
 const Episodes = ({ podcasts }) => {
   const [podcast, setPodcast] = useState(null);
-  
+
   const episodeOnClick = (event, episode) => {
     event.preventDefault();
     setPodcast(episode);
-    console.log(episode);
   };
 
-  const closeOnClick = (event) => {
+  const closeOnClick = event => {
     event.preventDefault();
     setPodcast(null);
-  }
+  };
   return (
     <>
       <h2 className="subtitle">Ultimos Episodios</h2>
@@ -40,12 +39,15 @@ const Episodes = ({ podcasts }) => {
         </div>
       ))}
       {podcast && (
-        <Layout pageHead={`${podcast.title} - ${podcast.description} - ${podcast.channel.title}`} pageHeader="Podcast">
+        <Layout
+          pageHead={`${podcast.title} - ${podcast.description} - ${podcast.channel.title}`}
+          pageHeader="Podcast"
+        >
           <Player clip={podcast} onClose={closeOnClick} />
         </Layout>
       )}
     </>
   );
-}
+};
 
 export default Episodes;
