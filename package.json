@@ -36,5 +36,16 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.0.10",
     "lint-staged": "^9.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
