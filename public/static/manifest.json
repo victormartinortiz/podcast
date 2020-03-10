@@ -1,0 +1,17 @@
+{
+  "name": "Podcast Victor",
+  "short_name": "Podcast",
+  "theme_color": "#8756ca",
+  "background_color": "#181818",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
