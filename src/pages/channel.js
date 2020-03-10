@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 const channel = ({ channel, audioClips, series, statusCode }) => {
   if (statusCode !== 200) {return <Error statusCode={statusCode} />};
   return (
-    <Layout pageHead={channel.title} pageHeader="Podcast">
+    <Layout pageHead={channel.title} pageHeader='Podcast'>
       <Channel channel={channel} audioClips={audioClips} series={series} />
     </Layout>
   );
@@ -32,7 +32,7 @@ channel.getInitialProps = async ({ query, res }) => {
     }
 
     const dataChannel = await reqChannel.json();
-    const channel = dataChannel.body.channel;
+    const { channel } = dataChannel.body;
 
     const dataAudios = await reqAudios.json();
     const audioClips = dataAudios.body.audio_clips;
@@ -40,13 +40,14 @@ channel.getInitialProps = async ({ query, res }) => {
     const dataSeries = await reqSeries.json();
     const series = dataSeries.body.channels;
 
-    return { channel, audioClips, series, statusCode: 200 };
+    return { channel, audioClips, series, statusCode: 200 }
   } catch (error) {
-    channel: null
-    audioClips: null
-    series: null
-    statusCode: 503
-    return <Error statusCode={statusCode} />;
+    return {
+      channel: null,
+      audioClips: null,
+      series: null,
+      statusCode: 503,
+    }
   }
 };
 

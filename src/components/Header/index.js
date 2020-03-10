@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import '../assets/styles/components/Header.scss'
+import { HeaderStyle, HeaderLink } from './styles'
 
 const Header = ({ pageHeader }) => (
-  <header>
+  <HeaderStyle>
     <Link href='/'>
-      <a>{pageHeader}</a>
+      <HeaderLink>{pageHeader}</HeaderLink>
     </Link>
-  </header>
+  </HeaderStyle>
 );
 
 export default Header;

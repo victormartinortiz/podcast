@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 export default class extends React.Component {
   render() {
     return (
@@ -14,7 +15,7 @@ export default class extends React.Component {
           body {
             margin: 0;
             background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
-            bakground-repeat: no-repeat;
+            background-repeat: no-repeat;
           }
         `}</style>
 
