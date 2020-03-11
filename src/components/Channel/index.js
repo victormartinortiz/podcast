@@ -5,7 +5,6 @@ import Episodes from '../Episode';
 import { Banner, Image } from './styles';
 
 const Channel = ({ channel, audioClips, series }) => {
-  console.log(channel);
   return (
     <>
       <Banner>
