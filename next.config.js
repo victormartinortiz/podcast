@@ -1,6 +1,8 @@
 // // next.config.js
 
 const withOffline = require('next-offline');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const webpack = require('webpack');
 
 const nextConfig = {
   target: 'serverless',
@@ -27,6 +29,11 @@ const nextConfig = {
         }
       }
     ]
+  },
+  webpack: config => {
+    config.plugins.push(new webpack.IgnorePlugin(/^encoding$/, /node-fetch/));
+
+    return config;
   }
 };
 
