@@ -40,7 +40,7 @@ export const Picture = styled.picture`
   padding: 10%;
 `;
 
-export const Image = styled.image`
+export const Image = styled.div`
   width: 100%;
   height: 100%;
   background-position: 50% 50%;

@@ -32,7 +32,7 @@ const Player = ({ clip, onClose }) => (
           )}
         </Nav>
         <Picture>
-          <Image src={clip.urls.image} alt='episodeimage' />
+          <Image src={clip.urls.image} alt='episode image' />
         </Picture>
         <PlayerControl>
           <PlayerTitle>{clip.title}</PlayerTitle>
