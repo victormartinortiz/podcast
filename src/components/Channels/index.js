@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from '../../../routes';
 import slug from '../../utils/slug';
-import { Grid, Channel, Image, SubTitle } from './styles';
+import { Grid, Channel, Image, SubTitle, PlayCircleOutline, Overlay } from './styles';
 
 const Channels = ({ getChannels }) => (
   <Grid>
@@ -14,6 +14,9 @@ const Channels = ({ getChannels }) => (
       >
         <Channel>
           <Image src={channel.urls.logo_image.original} alt='image' />
+          <Overlay>
+            <PlayCircleOutline />
+          </Overlay>
           <SubTitle>{channel.title}</SubTitle>
         </Channel>
       </Link>

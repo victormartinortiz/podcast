@@ -2,7 +2,14 @@
 import React from 'react';
 import { Link } from '../../../routes';
 import slug from '../../utils/slug';
-import { Title, Grid, Channel, Image } from './styles';
+import {
+  Title,
+  Grid,
+  Channel,
+  Image,
+  PlayCircleOutline,
+  Overlay
+} from './styles';
 
 const SubChannels = ({ series }) => (
   <>
@@ -16,6 +23,9 @@ const SubChannels = ({ series }) => (
         >
           <Channel>
             <Image src={serie.urls.logo_image.original} alt='image' />
+            <Overlay>
+              <PlayCircleOutline />
+            </Overlay>
             <Title>{serie.title}</Title>
           </Channel>
         </Link>

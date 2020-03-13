@@ -29,6 +29,7 @@ const Episodes = ({ podcasts }) => {
     event.preventDefault();
     setPodcast(null);
   };
+
   return (
     <>
       <SubTitle>Ultimos Episodios</SubTitle>

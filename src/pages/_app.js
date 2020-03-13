@@ -10,13 +10,11 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <html lang='es'>
-        <>
-          <GlobalStyle />
-          <PageNProgress color='#1db954' showSpinner={true} />
-          <Component {...pageProps} />
-        </>
-      </html>
+      <>
+        <GlobalStyle />
+        <PageNProgress color='#1db954' showSpinner={true} />
+        <Component {...pageProps} />
+      </>
     );
   }
 }
