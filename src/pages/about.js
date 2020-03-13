@@ -4,7 +4,7 @@ export default class extends React.Component {
     return (
       <>
         <article>
-          <img src='/static/platzi-logo.png' alt='Logo Platzi' />
+          <img src='/static/img/platzi-logo.png' alt='Logo Platzi' />
 
           <h1>CREADO POR VICTOR</h1>
           <p>FRONTEND REACT DEVELOPER</p>
