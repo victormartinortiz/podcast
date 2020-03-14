@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> render header unchanged 1`] = `
+<header
+  className="styles__HeaderStyle-sc-1iihxp8-0 iWPpDd"
+>
+  <a
+    className="styles__HeaderLink-sc-1iihxp8-1 QAMUQ"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  />
+</header>
+`;

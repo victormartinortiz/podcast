@@ -40,5 +40,6 @@
         "preprocess": false
       }
     ]
-  ]
+  ],
+  "presets": ["next/babel"]
 }

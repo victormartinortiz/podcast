@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player /> renders Player unchanged 1`] = `
+<div
+  className="styles__Modal-o7thus-0 cjCqka"
+>
+  <div
+    className="styles__Episode-o7thus-1 bNtjbq"
+  >
+    <nav
+      className="styles__Nav-o7thus-2 jQFgKT"
+    >
+      <a
+        className="styles__NavLink-o7thus-3 fGiZyr close"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        &lt; Volver
+      </a>
+    </nav>
+    <picture
+      className="styles__Picture-o7thus-4 dSZxxn"
+    >
+      <div
+        alt="episode image"
+        className="styles__Image-o7thus-5 gNtvUn"
+        src="https://images.theabcdn.com/i/32177134"
+      />
+    </picture>
+    <div
+      className="styles__PlayerControl-o7thus-6 cpBbxy"
+    >
+      <h3
+        className="styles__PlayerTitle-o7thus-7 cbiuLu"
+      >
+        Posta Originals: Guerra sin fin
+      </h3>
+      <h6
+        className="styles__PlayerSubTitle-o7thus-8 cFDamJ"
+      >
+        POSTA
+      </h6>
+      <audio
+        className="styles__PlayerAudio-o7thus-9 BgpTR"
+        controls={true}
+      >
+        <source
+          src="https://audioboom.com/posts/6751040-posta-originals-guerra-sin-fin.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
+  </div>
+</div>
+`;

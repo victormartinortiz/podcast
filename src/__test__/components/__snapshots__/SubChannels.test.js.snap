@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubChannels /> renderer SubChannels unchanged 1`] = `
+Array [
+  <h2
+    className="styles__Title-sc-7qfgmv-2 ebTkVT"
+  >
+    Series
+  </h2>,
+  <div
+    className="styles__Grid-sc-7qfgmv-0 lhRvlp"
+  >
+    <a
+      className="styles__Channel-sc-7qfgmv-1 kfnCxj"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <img
+        alt="image"
+        className="styles__Image-sc-7qfgmv-3 cZAKSz"
+        src="https://images.theabcdn.com/i/35369648"
+      />
+      <div
+        className="styles__Overlay-sc-7qfgmv-5 bWZduK"
+      >
+        <svg
+          className="styles__PlayCircleOutline-sc-7qfgmv-4 cUIJHB"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 5v14l11-7z"
+          />
+        </svg>
+      </div>
+      <h2
+        className="styles__Title-sc-7qfgmv-2 ebTkVT"
+      >
+        Undisclosed
+      </h2>
+    </a>
+  </div>,
+]
+`;

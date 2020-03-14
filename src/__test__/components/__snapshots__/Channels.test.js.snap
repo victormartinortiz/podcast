@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Channels /> renders Channels unchanged 1`] = `
+<div
+  className="styles__Grid-sc-4r36jh-0 fhKoXs"
+>
+  <a
+    className="styles__Channel-sc-4r36jh-1 jqIDMG"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <img
+      alt="image"
+      className="styles__Image-sc-4r36jh-5 coSDSp"
+      src="https://images.theabcdn.com/i/35369648"
+    />
+    <div
+      className="styles__Overlay-sc-4r36jh-4 fEOFQn"
+    >
+      <svg
+        className="styles__PlayCircleOutline-sc-4r36jh-3 hkaRrQ"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 5v14l11-7z"
+        />
+      </svg>
+    </div>
+    <h2
+      className="styles__SubTitle-sc-4r36jh-2 imzgRX"
+    >
+      Undisclosed
+    </h2>
+  </a>
+</div>
+`;
